@@ -12,8 +12,10 @@ mkdir %BUILD_DIR%
 
 cd /d %BUILD_DIR%
 
-echo ==== Configuring CMake... ====
+echo ==== Generating Makefiles with MinGW using CMake... ====
 cmake -G "MinGW Makefiles" .. > NUL
+
+echo ==== Building project... ====
 ..\mingw64\bin\make > NUL
 
 if exist ..\Project\bin\main.exe (
@@ -21,4 +23,10 @@ if exist ..\Project\bin\main.exe (
     del ..\Project\bin\main.exe
 )
 
-copy main.exe ..\Project\bin\main.exe
+copy main.exe ..\Project\bin\main.exe > NUL
+echo ==== Build completed successfully, new main.exe created. ====
+
+echo ==== Running the application... ====
+cd ..\Project\bin
+main.exe
+
