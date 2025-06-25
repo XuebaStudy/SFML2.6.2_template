@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Windows",
+            "includePath": [
+                "${workspaceFolder}/include/**",
+                "${workspaceFolder}/External/SFML-2.6.2/include",
+                "${workspaceFolder}/mingw64/include",
+                "${workspaceFolder}/mingw64/include/c++",
+                "${workspaceFolder}/mingw64/include/c++/13.1.0",
+                "${workspaceFolder}/mingw64/include/c++/13.1.0/x86_64-w64-mingw32",
+                "${workspaceFolder}/mingw64/x86_64-w64-mingw32/include"
+            ],
+            "defines": [],
+            "compilerPath": "${workspaceFolder}/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
